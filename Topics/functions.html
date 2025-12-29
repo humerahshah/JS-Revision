@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+
+        // quiz 1
+        // Write a function greet that takes a name as input and prints
+        // let name = prompt("Enter your name:");
+        // function greet() {
+        //     console.log("Hi", name);
+        // }
+        // greet();
+
+        // quiz 2
+        // Write a function addNumbers that takes two numbers and returns their sum.
+
+        // function addNumbers(a, b) {
+        //     return a + b;
+        // }
+        // console.log(addNumbers(3, 5));
+
+        // quiz 3
+        // Write a function checkEvenOdd that takes a number and prints "Even" if it is even, "Odd" if it is odd.
+        // let num = Number(prompt("Enter a number"));
+
+        // function checkEvenOdd(a) {
+        //     if (a % 2 == 0) {
+        //         console.log("Even");
+        //     }
+        //     else {
+        //         console.log("Odd");
+        //     }
+        // }
+        // checkEvenOdd(num);
+
+        // quiz 4
+        // Write a function square that takes a number and returns its square.
+        // let sq = Number(prompt("Enter a number"));
+        // function square(z) {
+        //     return z ** 2;
+        // }
+
+        // console.log(square(sq));
+
+        // quiz 5
+        // Write a function calculator that takes three arguments: two numbers and an operator (+, -, *, /) and returns the result.
+
+        function calculator(num1, num2, operator) {
+            if (operator === "+") {
+                return num1 + num2;
+            }
+            else if (operator === "-") {
+                return num1 - num2;
+            }
+            else if (operator === "*") {
+                return num1 * num2;
+            }
+            else if (operator === "/") {
+                return num1 / num2;
+            }
+            else {
+                console.log("Invalid Operator");
+            }
+        }
+
+        console.log(calculator(6,2,"/"));
+        console.log(calculator(2,100,"+"));
+        console.log(calculator(10,5,"-"));
+        console.log(calculator(0,100,"*"));
+
+
+    </script>
+</body>
+
+</html>
