@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <script>
+        let array = [1, 2, 4, 5, 6, 8, 10];
+        console.log(array); // will print whole array
+        console.log(array[4]); // give value at index 4 that is 6
+        console.log(array.length); // gives total length of array that is 7
+        array[0] = 3; // will chnge value at index 0 so 1 will now chnged to 3
+        console.log(array);
+        array[7] = 12; // will add value 12 at index 7
+        console.log(array);
+        console.log(array.length); // now length will be 8
+        console.log(typeof array); //object
+
+        // quick quiz 
+        // print all elements of array through for loop
+        
+        for (let i = 0; i < array.length; i++) {
+            console.log(array[i]);
+        }
+
+    </script>
+</body>
+
+</html>
