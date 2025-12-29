@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set 2</title>
+</head>
+
+<body>
+    <script>
+
+        // quiz 1 Use logical operators to find whether the age of a person lies between 10 and 20?
+
+        // let age = Number(prompt("Enter your age"));
+        // console.log(age >= 10 && age <= 20);
+
+        // quiz 2 Demonstrate the use of switch case statement in JavaScript.
+
+        let value1 = Number(prompt("Enter 1st number:"));
+        let operator = prompt("Enter an operator: +,-,*,/");
+        let value2 = Number(prompt("Enter 2nd number:"));
+
+        switch (operator) {
+            case "+":
+                alert(`Sum of ${value1} and ${value2} is ${value1 + value2}`);
+                break;
+            case "-":
+                alert(`Sub of ${value1} and ${value2} is ${value1 - value2}`);
+                break;
+            case "*":
+                alert(`Mul of ${value1} and ${value2} is ${value1 * value2}`);
+                break;
+            case "/":
+                alert(`Div of ${value1} and ${value2} is ${value1 / value2}`);
+                break;
+            default:
+                alert("invalid operator");
+        }
+
+
+        // quiz 3 Write a JS program to find whether a number is divisible by 2 and 3.
+        // let x = Number(prompt("Enter a number"));
+        // if (x % 2 == 0 && x % 3 == 0) {
+        //     console.log(x, "is divisible by 2 and 3");
+        // }
+        // else {
+        //     console.log(x, "is not divisible by 2 and 3");
+        // }
+
+        // quiz 4 Write a JS program to find whether a number is divisible by either 2 and 3.
+        // let num = Number(prompt("Enter a number"));
+        // if (num % 2 == 0 || num % 3 == 0) {
+        //     if (num % 2 == 0 && num % 3 == 0) {
+        //         console.log(num, "is divisible by both 2 and 3.");
+        //     }
+        //     else if (num % 2 == 0) {
+        //         console.log(num, "is divisible by 2 only.");
+        //     }
+        //     else if (num % 3 == 0) {
+        //         console.log(num, "is divisible by 3 only.");
+        //     }
+        // }
+        // else {
+        //     console.log(num, "is not divisible by 2 or 3.");
+        // }
+
+        // let number = Number(prompt("Enter a number:"));
+
+        // // Check if divisible by either 2 or 3
+        // if (number % 2 === 0 || number % 3 === 0) {
+        //     if (number % 2 === 0 && number % 3 === 0) {
+        //         alert("The number is divisible by both 2 and 3");
+        //     } else if (number % 2 === 0) {
+        //         alert("The number is divisible by 2 only");
+        //     } else if (number % 3 === 0) {
+        //         alert("The number is divisible by 3 only");
+        //     }
+        // } else {
+        //     alert("The number is divisible by neither 2 nor 3");
+        // }
+
+
+        // if (number % 2 === 0 || number % 3 === 0) {
+        //     if (number % 2 === 0 && number % 3 === 0) {
+        //         alert("The number is divisible by both 2 and 3");
+        //     } else if (number % 2 === 0) {
+        //         alert("The number is divisible by 2 only");
+        //     } else if (number % 3 === 0) {
+        //         alert("The number is divisible by 3 only");
+        //     }
+        // } else {
+        //     alert("The number is divisible by neither 2 nor 3");
+        // }
+
+
+
+
+
+        // quiz 5 Print "you can drive" or "you can't drive" based on age being greater than 18 using ternary operators.
+
+        // let a = Number(prompt("Enter your age"));
+        // alert((a >= 18) ? "you can drive" : "you can't drive");
+
+
+
+    </script>
+</body>
+
+</html>
