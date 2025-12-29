@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While Loop</title>
+</head>
+
+<body>
+    <script>
+        // quiz 1
+        // Numbers 1 se 5 print karo
+        let a = 1;
+        do {
+            console.log(a);
+            a++;
+        } while (a <= 5);
+
+        // quiz 2
+        // Odd numbers 1 se 9 tak print karo
+        let b = 1;
+        do {
+            if (b % 2 != 0) {
+                console.log(b);
+            }
+            b++;
+        } while (b <= 10);
+
+        // quiz 3
+        // Print numbers divisible by 3 from 3 to 15
+
+        let x = 3;
+        do {
+            if (x % 3 == 0) {
+                console.log(x);
+            }
+            x++
+        } while (x <= 15);
+
+        // quiz 4
+        // Ask user for a number until they enter 0
+
+        do {
+            let y = Number(prompt("Enter number"));
+            if (y == 0) {
+                break;
+            }
+            else {
+                alert("Enter other number");
+            }
+        } while (true);
+
+    </script>
+</body>
+
+</html>
