@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods of Array</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        let a = arr.toString(); // converts an array to a string
+        console.log(a); // obj sy string datatype ho jaye gi
+        console.log(arr); // original array modify nhi hwi
+        console.log(typeof arr); // object
+
+        let b = arr.join("-");
+        console.log(b); // array element is - k sth join ho jayen gy
+        console.log(arr); // original array modify nhi hwi
+
+        let c = arr.pop(); // array ka last element pop / remove ho jaye ga
+        console.log(c); // returns popped element 9
+        console.log(arr); // original array modify ho gai
+
+        let d = arr.push(68); // array k last py 1 element add ho jaye ga
+        console.log(d); // return kry ga length of original array jo ab chnge ho gai ho gi
+        console.log(arr); // original array modify ho gai
+
+        let e = arr.shift(); // array ka 1st element remove ho jaye ga
+        console.log(e); // return kry ga wo removed element jo 1st place sy remove hwa h
+        console.log(arr); // original array modify ho gai
+
+        let f = arr.unshift(86); // array ka beginning m element add ho jaye ga
+        console.log(f); // return kry ga length of original array jo ab chnge ho gai ho gi
+        console.log(arr); // original array modify ho gai
+
+        let array = [1, 2, 3];
+        let array2 = [11, 22, 33];
+        delete array[0]; // delete kr dy ga specific index k element ko and is sy array ki length nhi chng ho gi
+        console.log(array); // original array modify ho gi
+
+        let g = array.concat(array2); // array k sth array2 add kr dy ga 
+        console.log(g);
+        console.log(array); // original modify nhi hwi
+        let arr2 = ["a", "b", "c"];
+        console.log(array.concat(array2, arr2)); // jitni b add jrna cahen kr skty h
+
+        // JavaScript ka default sort() numbers ko number ki tarah nahi
+        // balkay string (text) ki tarah compare karta hai.
+        // Is liye 10 ko "10" aur 2 ko "2" bana kar dekhta hai.
+        // Phir pehla digit compare hota hai: "1" < "2"
+        // Isi wajah se 10, 2 se pehle aa jata hai.
+        // Numbers ko sahi order me sort karne ke liye
+        // compare function use karni parti hai (a, b) => a - b
+
+        let random = [2, 10, 1, 283, 543, 132, 6829, 14267, 909];
+        let k = random.sort(); // alphabetical order m sort krta h 
+        console.log(k);
+        console.log(random); // Original array change hoti hai
+
+        let compare = (a, b) => {
+            return a - b;
+        }
+        let h = random.sort(compare); // assending krny k liye compare func zruri h
+        console.log(h);
+
+        let i = [55, 66, 11, 2, 8, 6];
+        let j = i.sort();
+        console.log(j);
+
+        let l = random.splice(3, 3, 1, 12, 13, 100, 400) // array m new items add krny k liye
+        // splice() array ko beech se modify karne ke kaam aata hai
+        // syntax: array.splice(startIndex, deleteCount, item1, item2, ...)
+
+        // (3, 3, 1, 12, 13, 100, 400)
+        // 1st value (3): index jahan se kaam start hoga
+        // 2nd value (3): us index se kitne items remove karne hain
+        // baqi values (1, 12, 13, 100, 400): wahi items hain
+        // jo remove hone wali jagah par add ho jayenge
+
+        // splice() deleted items ko return karta hai
+        // aur original array ko permanently change (modify) kar deta hai
+
+        console.log(l); // return kry ga deleted items
+        console.log(random); // original modify ho gi
+
+
+        // slice() array ka ek hissa copy karne ke liye use hota hai
+        // syntax: array.slice(startIndex, endIndex)
+
+        // startIndex: jahan se copy shuru hogi (ye index include hota hai)
+        // endIndex: jahan tak copy hogi (ye index include nahi hota)
+
+        // slice() original array ko modify nahi karta
+        // balkay ek naya array return karta hai
+
+        // agar sirf startIndex diya jaye
+        // to us index se le kar array ke end tak copy ho jati hai
+
+        // agar koi index na diya jaye
+        // to poori array ki copy bana deta hai
+
+        // slice() me delete ya add ka concept nahi hota
+        // ye sirf data copy karta hai
+        let m = random.slice(0, 6);
+        console.log(m);
+
+
+
+    </script>
+</body>
+
+</html>
