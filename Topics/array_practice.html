@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Practice</title>
+</head>
+
+<body>
+    <script>
+        // Ek array numbers = [1, 2, 3, 4, 5, 6] banaiye aur for loop use karke saare numbers ka sum print kijiye.
+        let numbers = [1, 2, 3, 4, 5, 6];
+        let total = 0;
+        for (let num of numbers) {
+            total += num;
+        }
+        console.log(total);
+
+        // Ek array fruits = ["apple", "mango", "banana", "orange"] hai. for loop se har fruit ka first letter print kijiye.
+        let fruits = ["apple", "mango", "banana", "orange"];
+        for (let fruit of fruits) {
+            console.log(fruit[0]);
+        }
+
+        // Ek array numbers = [10, 15, 20, 25, 30] hai. for loop ka use karke even numbers alag array me store kijiye aur print kijiye.
+        let nums = [10, 15, 20, 25, 30];
+        let evens = [];
+        for (let n of nums) {
+            if (n % 2 === 0) {
+                evens.push(n);
+            }
+        }
+        console.log(evens);
+
+        // numbers = [5, 10, 15, 20] me push() ka use karke 25 add kijiye aur pop() ka use karke last number remove kijiye. Print kijiye array.
+        let arr = [5, 10, 15, 20];
+        arr.push(25);
+        console.log(arr);
+        arr.pop();
+        console.log(arr);
+
+        // fruits = ["apple", "mango", "banana"] me splice() ka use karke "orange" insert kijiye 1st index par.
+        let fruitArr = ["apple", "mango", "banana"];
+        fruitArr.splice(1, 1, "orange");
+        console.log(fruitArr);
+
+        // numbers = [1, 2, 3, 4, 5] ko slice() ka use karke [2,3,4] alag array me store kijiye.
+        let arr1 = [1, 2, 3, 4, 5];
+        let new_arr = arr1.slice(1, 4);
+        console.log(new_arr);
+
+        // numbers = [1, 2, 3, 4, 5] ka map() use karke har number ka square print kijiye.
+        let arr2 = [1, 2, 3, 4, 5];
+        let mapped = arr2.map((a) => {
+            return a * a;
+        });
+        console.log(mapped);
+
+        // numbers = [10, 15, 20, 25, 30] ka filter() use karke sirf numbers jo 20 se zyada hain print kijiye.
+        let five = [10, 15, 20, 25, 30];
+        let filtered = five.filter((a) => {
+            return a > 20;
+        });
+        console.log(filtered);
+
+        // numbers = [1, 2, 3, 4, 5] ka reduce() use karke sum of all numbers calculate kijiye.
+        let sumArr = [1, 2, 3, 4, 5];
+        let reduced = sumArr.reduce((a, b) => {
+            return a + b;
+        });
+        console.log(reduced);
+
+        /*
+        numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        Filter se even numbers nikaaliye.
+        Map se unko double kijiye.
+        Reduce se unka sum calculate kijiye.
+        */
+        let mix = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let filteredMix = mix.filter((x) => {
+            return x % 2 === 0;
+        });
+        console.log(filteredMix);
+
+        let doubledMix = filteredMix.map((x) => {
+            return x * 2;
+        });
+        console.log(doubledMix);
+
+        let sumMix = doubledMix.reduce((x, y) => {
+            return x + y;
+        });
+        console.log(sumMix);
+    </script>
+</body>
+
+</html>
