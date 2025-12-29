@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+
+<body>
+    <script>
+        // for (let i = 0; i < 5; i++) {
+        //     console.log(i);
+        // }
+
+        // for (let i = 0; i < 10; i++) {
+        //     console.log(i + 1);
+        // }
+
+        // sum of n numbers
+        // let sum = Number(prompt("Enter n number")); // 3
+        // for (let i = 0; i < 3; i++) {
+        //     sum += i + 1
+        // }
+        // console.log(sum) // 9
+
+        //quiz 1: 1 se n number tak print karo
+
+        // let n = Number(prompt("Enter a number n"));
+
+        // for (let i = 0; i < n; i++) {
+        //     console.log(i + 1);
+        // }
+
+        // quiz 2: sirf even numbers print karo
+        // let x = Number(prompt("Enter a number n"));
+
+        // for (let i = 1; i <= x; i++) {
+        //     if (i % 2 == 0) {
+        //         console.log(i);
+        //     }
+        // }
+
+        // quiz 3: sirf odd numbers print karo
+        // let y = Number(prompt("Enter a number n"));
+
+        // for (let i = 0; i <= y; i++) {
+        //     if (i % 2 != 0) {
+        //         console.log(i);
+        //     }
+        // }
+        // for (let i = 0; i < y; i++) {
+        //     if (i % 2 == 1) {
+        //         console.log(i);
+        //     }
+        // }
+
+        // quiz 4:  1 se n tak numbers ka sum nikalo
+
+        // let num = 3;
+
+        // for (let i = 0; i < 3; i++) {
+        //     num += i;
+        // }
+        // console.log(num); // 6
+
+        // quiz 5:  table print kro
+
+        // let val = 5;
+        // let table = Number(prompt("Enter number"));
+
+        // for (let i = 1; i <= 10; i++) {
+        //     console.log(`${table} x ${i} = ${table * i}`);
+        // }
+
+        // quiz 6:  count karo kitne numbers divisible by 3 hain (1 se n tak)
+        // let z = 100;
+        // let count = 0;
+
+        // for (let i = 1; i < z; i++) {
+        //     if (i % 3 == 0) {
+        //         count++;
+        //     }
+        // }
+        // console.log(count);
+
+        // quiz 7: factorial nikalo  Example: 5 → 120
+
+        // let fact = 1;
+        // for (let i = 5; i >= 1; i--) {
+        //     fact *= i;
+        // }
+        // console.log(fact);
+
+        // user input ka factorial
+
+        // let factorial = Number(prompt("enter number"));
+        // let result = 1;
+
+        // for (let i = 1; i <= factorial; i++) {
+        //     result *= i;
+        // }
+        // console.log(result);
+
+
+        // quiz 8: 1 se n tak even numbers ka sum odd numbers ka sum (alag alag)
+
+        // let input = Number(prompt("enter number"));
+        // let evenSum = 0;
+        // let oddSum = 0;
+        // for (let i = 1; i <= input; i++) {
+        //     if (i % 2 == 0) {
+        //         evenSum += i;
+        //     }
+        //     else {
+        //         oddSum += i;
+        //     }
+        // }
+        // console.log(evenSum);
+        // console.log(oddSum);
+
+
+
+        // quiz 9: reverse counting print karo
+
+        // for (let i = 5; i >= 1; i--) {
+        //     console.log(i);
+        // }
+
+
+        // quiz 10: check karo prime hai ya nahi
+
+        let prime = Number(prompt("enter number")); // 7
+        let isPrime = true;
+
+        if (prime <= 1) {
+            console.log("Not Prime");
+        }
+        else {
+            for (let i = 2; i < prime; i++) {
+                if (prime % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        if (isPrime) {
+            console.log(prime + " is prime");
+        }
+        else {
+            console.log(prime + " is not prime");
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
