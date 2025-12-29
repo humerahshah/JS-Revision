@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In Loop</title>
+</head>
+
+<body>
+    <script>
+        // quiz 1
+        // for...in loop ka use karke object ke keys aur values print karo
+        // Output example: "name: Ali"
+
+
+        let person = { name: "Ali", age: 25, city: "Lahore" };
+
+        for (let key in person) {
+            console.log(key, ":", person[key]);
+        }
+        // quiz 2
+        let marks = { Math: 80, English: 75, Science: 90 };
+        // for...in loop ka use karke subject aur marks print karo
+
+        for (let mark in marks) {
+            console.log(mark, ":", marks[mark]);
+        }
+
+        // quiz 3
+        let fruitCount = { apple: 5, mango: 3, banana: 7 };
+        // for...in loop ka use karke total fruits calculate karo
+        let fruits = 0;
+        for (fruit in fruitCount) {
+            fruits += fruitCount[fruit];
+        }
+        console.log(fruits);
+
+    </script>
+</body>
+
+</html>
