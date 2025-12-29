@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 4</title>
+</head>
+
+<body>
+    <script>
+
+        // quiz 1
+        // What will the following print in JS
+        let a = "har\""
+        console.log(a.length) // 4
+        // quiz 2
+        // Explore the includes, startsWith & endsWith function of a string.
+        let b = "supercalifragilisticexpialidocious";
+
+        console.log(b.includes("super")); // true
+        console.log(b.startsWith("s")); // true
+        console.log(b.endsWith("ious")); //true
+
+        // quiz 3
+        // Write a program to convert a given string to lowercase.
+        let c = "Christian Dior";
+        console.log(c.toLowerCase());
+
+        // quiz 4
+        // Extract the amount out of this string
+        let d = "Please give RS 1000";
+        let f = d.split(" ");
+        console.log(f);
+        console.log(f[3]);
+
+        let g = Number.parseInt(d.slice(15));
+        console.log(g);
+        console.log(typeof g);
+
+        // quiz 5
+        // Try to change fourth character of a given string
+        // were you able to do it?
+
+        let e = "friend";
+        e[3] = "R";
+        console.log(e); // e is not chnaged because string is immutable
+
+    </script>
+</body>
+
+</html>
