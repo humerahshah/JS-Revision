@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+
+<body>
+    <script>
+        let myName = "Humerah Shah";
+        let you = "     Ali    ";
+
+        // Get the total number of characters in myName
+        console.log(myName.length);
+
+        // Convert all letters of myName to uppercase
+        console.log(myName.toUpperCase());
+
+        // Convert all letters of myName to lowercase
+        console.log(myName.toLowerCase());
+
+        // Extract a part of the string from index 8 to 10 (not including 10)
+        console.log(myName.slice(8, 10));
+
+        // Extract a part of the string from index 2 to the end
+        console.log(myName.slice(2));
+
+        // Replace "Shah" with "Ahmad" in the string
+        console.log(myName.replace("Shah", "Ahmad"));
+
+        // Join myName with another string
+        console.log(myName.concat(" is my friend"));
+
+        // Another way to join strings using + operator
+        console.log(myName + " a friend of mine");
+
+        // Print the original string with spaces
+        console.log(you);
+
+        // Remove spaces from start and end of the string
+        console.log(you.trim());
+
+        console.log(myName[8]); // Get character at index 8
+
+        console.log(myName.charAt(6)); // Get character at index 6 using charAt()
+
+        console.log(myName.indexOf("a")); // Find first position of "a"
+
+        console.log(myName.lastIndexOf("a")); // Find last position of "a"
+
+        console.log(myName.includes("Shah")); // Check if "Shah" is in the string
+
+        console.log(myName.startsWith("Hu")); // Check if string starts with "Hu"
+
+        console.log(myName.endsWith("g")); // Check if string ends with "g"
+
+        console.log(myName.substring(0, 9)); // Get part of string from index 0 to 9 (not including 9)
+
+        console.log(myName.substr(6, 8)); // Get part of string starting at index 6 with length 8
+
+        console.log(myName.split(" ")); // Split string into array using space as separator
+
+        let str = "a,b,c,d";
+        console.log(str.split(",")); // ["a","b","c","d"]
+
+        let arr = ["a", "b", "c"];
+        console.log(arr.join("-")); // a-b-c
+
+        console.log(myName.repeat(6)); // Repeat the string 6 times
+
+        console.log(you.trimStart()); // Remove spaces from the start of the string
+
+        console.log(you.trimEnd()); // Remove spaces from the end of the string
+
+        console.log(myName.replaceAll("h", "f")); // Replace all "h" with "f" in the string
+
+        // quick quiz
+        // use for loop to print a string
+
+        // let name = "Humerah";
+        // for (let i = 0; i < name.length; i++) {
+        //     console.log(name[i]);
+        // }
+    </script>
+
+</body>
+
+</html>
