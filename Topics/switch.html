@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+
+<body>
+    <script>
+
+        // Day of the week
+
+        // let day = 6;
+
+        // switch (day) {
+        //     case 1:
+        //         console.log("Monday");
+        //         break;
+        //     case 2:
+        //         console.log("Tuesday");
+        //         break;
+        //     case 3:
+        //         console.log("Wednesday");
+        //         break;
+        //     case 4:
+        //         console.log("Thursday");
+        //         break;
+        //     case 5:
+        //         console.log("Friday");
+        //         break;
+        //     case 6:
+        //         console.log("Saturday");
+        //         break;
+        //     case 7:
+        //         console.log("Sunday");
+        //         break;
+        //     default:
+        //         console.log("Invalid Day");
+        // }
+
+        // Month of the year
+
+        // let month = Number(prompt("Enter month number (1 - 12)"));
+
+        // switch (month) {
+        //     case 1:
+        //         alert("January");
+        //         break;
+        //     case 2:
+        //         alert("February");
+        //         break;
+        //     case 3:
+        //         alert("March");
+        //         break;
+        //     case 4:
+        //         alert("April");
+        //         break;
+        //     case 5:
+        //         alert("May");
+        //         break;
+        //     case 6:
+        //         alert("June");
+        //         break;
+        //     case 7:
+        //         alert("July");
+        //         break;
+        //     case 8:
+        //         alert("August");
+        //         break;
+        //     case 9:
+        //         alert("September");
+        //         break;
+        //     case 10:
+        //         alert("October");
+        //         break;
+        //     case 11:
+        //         alert("November");
+        //         break;
+        //     case 12:
+        //         alert("December");
+        //         break;
+        //     default:
+        //         alert("Invalid Month");
+        // }
+
+        let numbers = Number(prompt("Enter your Marks between 0 - 100"));
+
+        switch (numbers) {
+            case (numbers <= 100 && numbers >= 90):
+                alert("Grade A");
+                break;
+            case (numbers >= 80 && numbers <= 89):
+                alert("Grade B");
+                break;
+            case (numbers >= 70 && numbers <= 79):
+                alert("Grade C");
+                break;
+            case (numbers >= 60 && numbers <= 69):
+                alert("Grade D");
+                break;
+            case (numbers >= 50 && numbers <= 59):
+                alert("Grade E");
+                break;
+            case (numbers >= 0 && numbers <= 49):
+                alert("Grade F");
+                break;
+            default:
+                alert("Invalid");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
