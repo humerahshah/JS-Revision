@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops with Array</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+
+        // classical loop
+        // for (let i = 0; i < arr.length; i++) {
+        //     console.log(arr[i]); // print elements of arr
+        // }
+
+        // forEach loop
+        // arr.forEach((element) => {
+        //     console.log(element); // prints element of arr
+        // })
+
+        // for of loop
+        // for (let i of arr) {
+        //     console.log(i); // prints elements of arr
+        // }
+
+        // for in loop
+        for (let i in arr) {
+            console.log(i); // prints index of arr
+        }
+
+        // Array.from
+
+        let name = "Humerah";
+        let array = Array.from(name); // makes array from name
+        console.log(array);
+
+
+    </script>
+</body>
+
+</html>
