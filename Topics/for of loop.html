@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Of Loop</title>
+</head>
+
+<body>
+    <script>
+        // quiz 1
+        let word = "hello";
+        // for...of loop ka use karke har character print karo
+
+        for (let letter of word) {
+            console.log(letter);
+        }
+
+        // quiz 2
+        let name = "Sara";
+        // for...of loop ka use karke letters ko uppercase me print karo
+
+        for (let words of name) {
+            console.log(words.toUpperCase());
+        }
+
+        // quiz 3
+        let text = "js";
+        // for...of loop ka use karke har character ke aage "-" print karo
+        // Output example: j- s-
+
+        for (let char of text) {
+            console.log(char + "-");
+        }
+
+        // for single line output 
+
+        let result = "";
+        for (let char of text) {
+            result += char + "-";
+        }
+        console.log(result); // j-s-
+
+    </script>
+</body>
+
+</html>
