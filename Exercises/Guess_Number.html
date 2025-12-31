@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Write a js program to generate a random number and store it in a variable.
+        The program then takes an input from the user to tell them
+        whether the guess was correct, greater or lesser than the original number.
+        100 - (no of guesses) is the score of user.
+        The program is expected to terminate once the number is guessed.
+        Number should be between 1 - 100.
+        */
+
+        let random = Math.floor(Math.random() * 100) + 1;
+        let count = 0;
+
+        while (true) {
+            let user_input = Number(prompt("Guess the number between 1 - 100"));
+            count++;
+            if (user_input < random) {
+                alert("Your guess is lesser than original number.");
+            }
+            else if (user_input > random) {
+                alert("Your guess is greater than original number.");
+            }
+            else {
+                alert("Your guess is correct.");
+                alert(`Your score is ${100 - count}`);
+                alert(`You guessd in ${count} turns.`);
+                break;
+            }
+        }
+
+        // let random = Math.floor(Math.random() * 100) + 1;
+        // let count = 0;
+
+        // for (let i = 0; i < random; i++) {
+        //     let user_input = Number(prompt("Guess the number between 1 - 100"));
+        //     if (user_input < random) {
+        //         alert("Your guess is lesser than original number.");
+        //         count++;
+        //     }
+        //     else if (user_input > random) {
+        //         alert("Your guess is greater than original number.");
+        //         count++;
+        //     }
+        //     else {
+        //         alert("Your guess is correct.");
+        //         alert(`Your score is ${100 - count}`);
+        //         alert(`You guessd in ${count} turns.`);
+        //         break;
+        //     }
+        // }
+
+        // let random = Math.floor(Math.random() * 100) + 1;
+        // let count = 0;
+
+        // while (true) {
+        //     let user_input = Number(prompt("Guess the number between 1 - 100"));
+        //     count++;
+
+        //     if (user_input < random) {
+        //         alert("Your guess is lesser than the original number.");
+        //     }
+        //     else if (user_input > random) {
+        //         alert("Your guess is greater than the original number.");
+        //     }
+        //     else {
+        //         alert("Your guess is correct!");
+        //         alert(`You guessed in ${count} turns.`);
+        //         alert(`Your score is ${100 - count}`);
+        //         break;
+        //     }
+        // }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
