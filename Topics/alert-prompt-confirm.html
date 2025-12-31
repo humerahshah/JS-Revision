@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Prompt Confirm</title>
+</head>
+
+<body>
+    <script>
+        // prompt
+        let input = Number(prompt("Enter a value"));
+
+        // alert
+        let a = alert("you entered input of type", typeof input);
+
+        // confirm
+        let x = confirm("Do you want to write it on page?");
+        if (x) {
+            document.write(input);
+        }
+        else {
+            document.write("Please allow me to write");
+        }
+    </script>
+</body>
+
+</html>
