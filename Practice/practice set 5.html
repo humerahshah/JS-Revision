@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 5</title>
+</head>
+
+<body>
+    <script>
+        // quiz 1 Create an array of numbers and take input from the user to add numbers to the array.
+
+        // let numbers = [];
+        // for (let i = 0; i < 5; i++) {
+        //     let user = Number(prompt("Enter numbers to add in array"));
+        //     numbers.push(user);
+        // }
+        // console.log(numbers);
+
+        // Quiz 2 Keep adding numbers to the array in 1 question until 0 is added to the array.
+
+        // let add_num = [];
+        // let i = 0;
+        // while (true) {
+        //     let num = Number(prompt("Enter numbers to add in array"));
+        //     if (num !== 0) {
+        //         add_num.push(num);
+        //     }
+        //     else {
+        //         break;
+        //     }
+        // }
+        // console.log(add_num);
+
+        // Quiz 3 Filter for numbers divisible by 10 from a given array.
+
+        // let array = [5, 10, 25, 29, 20, 50];
+        // let result = array.filter((a) => {
+        //     return a % 10 == 0;
+        // })
+        // console.log(result);
+
+        //  Quiz 4 Create an array of square of given numbers.
+
+        // let check_sq = [5, 1, 2, 6, 8];
+        // let square = check_sq.map((x) => {
+        //     return x * x;
+        // })
+        // console.log(square);
+
+        // Quiz 5 Use reduce to calculate factorial of a given number from an array of first n natural numbers(n being the number whose factorial needs to be calculated).
+
+        let arr = [];
+        let n = Number(prompt("Enter a number for factorial"));
+        if (n === 0) {
+            console.log(1);
+        }
+        else {
+            for (let i = 1; i <= n; i++) {
+                arr.push(i);
+            }
+            console.log(arr);
+            let factorial = arr.reduce((a, b) => {
+                return a * b;
+            });
+            console.log(factorial);
+        }
+
+
+
+    </script>
+</body>
+
+</html>
