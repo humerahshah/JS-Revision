@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Methods</title>
+</head>
+
+<body>
+    <script>
+        // ===============================
+        // JavaScript Console Methods
+        // ===============================
+
+        // 1️⃣ console.log
+        console.log("This is a log message");
+        let a = 10;
+        let b = 5;
+        console.log("Sum:", a + b);
+
+        // 2️⃣ console.info
+        console.info("This is an info message");
+
+        // 3️⃣ console.warn
+        console.warn("This is a warning message");
+
+        // 4️⃣ console.error
+        console.error("This is an error message");
+
+        // 5️⃣ console.assert
+        let age = 16;
+        console.assert(age >= 18, "Age is less than 18");
+
+        // 6️⃣ console.table
+        let student = {
+            name: "Jennifer",
+            skill: "Frontend",
+            level: "Beginner"
+        };
+
+        console.table(student);
+
+        let users = [
+            { name: "Ali", age: 20 },
+            { name: "Sara", age: 22 }
+        ];
+
+        console.table(users);
+
+        // 7️⃣ console.time & console.timeEnd
+        console.time("Loop Time");
+        for (let i = 0; i < 100000; i++) { }
+        console.timeEnd("Loop Time");
+
+        // 8️⃣ console.clear
+        // Uncomment the line below to clear console
+        // console.clear();
+
+    </script>
+</body>
+
+</html>
